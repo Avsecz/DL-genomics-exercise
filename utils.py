@@ -2,6 +2,7 @@ import keras.backend as K
 from concise.utils.pwm import DEFAULT_BASE_BACKGROUND, pssm_array2pwm_array, _pwm2pwm_info
 from concise.utils.plot import seqlogo, seqlogo_fig
 from concise.eval_metrics import auc, auprc
+import matplotlib.pyplot as plt
 
 
 def evaluate(model, x, y, add_metrics={}):
