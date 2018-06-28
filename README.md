@@ -6,6 +6,5 @@ Jupyter notebooks for the system genetics lecture exercise 11 thought at TUM
 
 1. Visit https://colab.research.google.com/
 2. Select github -> avsecz -> DL-genomics-exercise -> Simulated.ipynb
-3. Select 'New python 3 notebook'
 ![img](colab.png)
 4. Once you have the notebook, select to use the GPU: Edit -> Notebook settings -> Hardware accelerator = GPU
