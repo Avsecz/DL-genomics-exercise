@@ -1,3 +1,4 @@
+import numpy as np
 import keras.backend as K
 from concise.utils.pwm import DEFAULT_BASE_BACKGROUND, pssm_array2pwm_array, _pwm2pwm_info
 from concise.utils.plot import seqlogo, seqlogo_fig
