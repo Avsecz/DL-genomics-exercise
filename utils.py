@@ -52,11 +52,11 @@ def plot_history(history, figsize=(8, 5)):
       metric: metric name from model.metrics_names
     """
     # Setup the figure object
-    figsize=(figsize[0]*len(model.metrics_names), figsize[1])
+    figsize=(figsize[0]*len(history.model.metrics_names), figsize[1])
     fig = plt.figure(figsize=figsize)
     
-    for i, metric in enumerate(model.metrics_names):
-        plt.subplot(1, len(model.metrics_names), i+1)
+    for i, metric in enumerate(history.model.metrics_names):
+        plt.subplot(1, len(history.model.metrics_names), i+1)
         
         plt.plot(history.epoch, history.history[metric], label=f'train')
         plt.plot(history.epoch, history.history['val_'+metric], label=f'valid')
